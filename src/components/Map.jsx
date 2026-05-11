@@ -13,19 +13,18 @@ import {
 import "leaflet/dist/leaflet.css";
 import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
+import { useUrlPosition } from "../hooks/useUrlPosition";
 
 function Map() {
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
-  const [searchParams] = useSearchParams();
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
     getPosition,
   } = useGeolocation({ defaultPosition: { lat: 40, lng: 0 } });
-
-  const mapLat = searchParams.get("lat");
-  const mapLng = searchParams.get("lng");
+  const [mapLat, mapLng]= useUrlPosition();
+  
 
   useEffect(() => {
     if (mapLat && mapLng) {
