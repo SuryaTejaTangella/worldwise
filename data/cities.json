@@ -83,6 +83,30 @@
         "lng": "76.72915438450443"
       },
       "id": "svMH4D0EwBs"
+    },
+    {
+      "cityName": "Kanchipuram",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2026-05-12T13:04:40.888Z",
+      "notes": "satya",
+      "position": {
+        "lat": "12.844527496540845",
+        "lng": "79.71968165019331"
+      },
+      "id": "ME92VHjXAv8"
+    },
+    {
+      "cityName": "Ponneri",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2026-05-12T13:05:20.133Z",
+      "notes": "hello",
+      "position": {
+        "lat": "13.328454287901817",
+        "lng": "80.13452240629064"
+      },
+      "id": "V48S4fAYQN8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
