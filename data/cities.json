@@ -37,40 +37,16 @@
       "id": "98443197"
     },
     {
-      "cityName": "Cortes de Aragon",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2026-05-12T06:19:24.740Z",
+      "cityName": "Chausey",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2026-05-13T13:58:20.288Z",
       "notes": "hello",
       "position": {
-        "lat": "40.98482343513266",
-        "lng": "-0.8346906930942866"
+        "lat": "48.93171052840555",
+        "lng": "-1.8440128690805915"
       },
-      "id": "VoBjqLh6Izc"
-    },
-    {
-      "cityName": "Stroncone",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2026-05-12T06:24:20.155Z",
-      "notes": "pizza",
-      "position": {
-        "lat": "42.50674884623987",
-        "lng": "12.636640753916373"
-      },
-      "id": "fSsRUaZekUY"
-    },
-    {
-      "cityName": "Castellote",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2026-05-12T12:52:57.412Z",
-      "notes": "hello",
-      "position": {
-        "lat": "40.7560417137679",
-        "lng": "-0.2854037680521815"
-      },
-      "id": "Qacjh3hdhwA"
+      "id": "3cP1h6-QNyM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
