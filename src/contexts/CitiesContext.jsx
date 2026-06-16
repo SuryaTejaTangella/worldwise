@@ -1,7 +1,7 @@
 // import { isLastDayOfMonth } from "date-fns";
 import { createContext, useEffect, useContext, useReducer } from "react";
 
-const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://json-server-cril.onrender.com";
 
 const CitiesContext = createContext();
 
