@@ -22,10 +22,8 @@ function City() {
     function () {
       getCity(id);
     },
-    [getCity, id],
+    [id],
   );
-
-
 
   const { cityName, emoji, date, notes } = currentCity;
 
@@ -36,7 +34,10 @@ function City() {
       <div className={styles.row}>
         <h6>City name</h6>
         <h3>
-          <span><FlagEmojiToPNG flag={emoji}/></span> {cityName}
+          <span>
+            <FlagEmojiToPNG flag={emoji} />
+          </span>{" "}
+          {cityName}
         </h3>
       </div>
 
@@ -63,7 +64,7 @@ function City() {
       </div>
 
       <div>
-        <BackButton/>
+        <BackButton />
       </div>
     </div>
   );
