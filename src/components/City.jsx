@@ -4,7 +4,7 @@ import { useCities } from "../contexts/CitiesContext";
 import { useEffect } from "react";
 import Spinner from "./Spinner";
 import BackButton from "./BackButton";
-import FlagEmojiToPNG from "./flagemojiToPNG";
+import FlagEmojiToPNG from "./FlagEmojiToPNG";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
