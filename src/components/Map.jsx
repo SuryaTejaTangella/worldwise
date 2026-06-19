@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { useCities } from "../contexts/CitiesContext";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import { useGeolocation } from "../hooks/useGeolocation";
+import Button from "./Button";
+import { useUrlPosition } from "../hooks/useUrlPosition";
 import styles from "./Map.module.css";
 import {
   MapContainer,
@@ -11,9 +14,19 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { useGeolocation } from "../hooks/useGeolocation";
-import Button from "./Button";
-import { useUrlPosition } from "../hooks/useUrlPosition";
+
+import L from "leaflet";
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
 
 function Map() {
   const { cities } = useCities();
@@ -23,8 +36,7 @@ function Map() {
     position: geolocationPosition,
     getPosition,
   } = useGeolocation({ defaultPosition: { lat: 40, lng: 0 } });
-  const [mapLat, mapLng]= useUrlPosition();
-  
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(() => {
     if (mapLat && mapLng) {
