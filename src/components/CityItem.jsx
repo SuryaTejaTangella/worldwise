@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./CityItem.module.css";
 import { useCities } from "../contexts/CitiesContext";
-import FlagEmojiToPNG from "./flagemojiToPNG";
+import FlagEmojiToPNG from "./FlagEmojiToPNG";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -16,7 +16,7 @@ function CityItem({ city }) {
 
   function handleClick(e) {
     e.preventDefault();
-   deleteCity(id);
+    deleteCity(id);
   }
 
   return (
