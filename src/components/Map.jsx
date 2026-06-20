@@ -30,7 +30,7 @@ function Map() {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
     getPosition,
-  } = useGeolocation({ defaultPosition: { lat: 40, lng: 0 } });
+  } = useGeolocation();
   const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(() => {
